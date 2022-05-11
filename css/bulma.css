@@ -488,10 +488,10 @@ a.box:active {
 }
 
 .button {
-  background-color: white;
+  background-color: var(--accent);
   border-color: #dbdbdb;
   border-width: 1px;
-  color: #363636;
+  color: #FFFFFF;
   cursor: pointer;
   justify-content: center;
   padding-bottom: calc(0.5em - 1px);
@@ -533,7 +533,7 @@ a.box:active {
 
 .button:focus, .button.is-focused {
   border-color: #485fc7;
-  color: #363636;
+  color: #FFFFFF;
 }
 
 .button:focus:not(:active), .button.is-focused:not(:active) {
@@ -542,7 +542,7 @@ a.box:active {
 
 .button:active, .button.is-active {
   border-color: #4a4a4a;
-  color: #363636;
+  color: #FFFFFF;
 }
 
 .button.is-text {
@@ -5373,7 +5373,7 @@ button.dropdown-item.is-active {
 }
 
 .navbar {
-  background-color: white;
+  background-color: var(--accent);
   min-height: 3.25rem;
   position: relative;
   z-index: 30;
@@ -6059,7 +6059,7 @@ body.has-navbar-fixed-bottom {
 }
 
 .navbar-burger {
-  color: #4a4a4a;
+  color: #FFFFFF;
   cursor: pointer;
   display: block;
   height: 3.25rem;
