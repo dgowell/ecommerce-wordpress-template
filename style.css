@@ -59,10 +59,13 @@ background-image: image-set(
 *     NAVIGATION
 *************************************************************
 */
+#masthead .navbar-brand {
+    align-items: center;
+}
 .site-header {
     background-color: var(--accent-color);
 }
-.navbar-brand {
+.site-branding img {
     max-width: 200px;
 }
 .custom-logo-link {
@@ -72,11 +75,19 @@ background-image: image-set(
 #primary-menu .has-dropdown > a {
     color: #FFFFFF;
 }
-#primary-menu .navbar-item:hover,
+#primary-menu.is-active > .navbar-item > a,
+#primary-menu.is-active > a {
+    color: #000000;
+}
+#primary-menu .navbar-item:hover > a,
 #primary-menu .navbar-link:hover,
 #primary-menu .navbar-link:focus,
 #primary-menu .navbar-link:focus-within {
     color: #000000;
+}
+#primary-menu > .navbar-item:hover,
+#primary-menu > .navbar-item:focus {
+      color: #000000; 
 }
 #primary-menu .has-dropdown:hover > a {
    color: #000000; 

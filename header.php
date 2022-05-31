@@ -33,7 +33,7 @@
                     <div class="site-branding">
                         <?php the_custom_logo(); ?>
                     </div><!-- .site-branding -->
-                    <button class="button navbar-burger is-justify-content-flex-end" data-target="primary-menu">
+                    <button class="button navbar-burger" data-target="primary-menu">
                         <span></span>
                         <span></span>
                         <span></span>
