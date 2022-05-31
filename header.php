@@ -30,23 +30,10 @@
         <header id="masthead" class="site-header">
             <nav class="navbar container" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
-                    <a class="navbar-item" href="/">
-                        <div class="site-branding">
-                            <?php
-                                the_custom_logo();
-                                if ( is_front_page() && is_home() ) :
-                                    ?>
-                            <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"
-                                    rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                            <?php
-                                else :
-                                    ?>
-                            <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"
-                                    rel="home"><?php bloginfo( 'name' ); ?></a></p>
-                            <?php endif; ?>
-                        </div><!-- .site-branding -->
-                    </a>
-                    <button class="button navbar-burger" data-target="primary-menu">
+                    <div class="site-branding">
+                        <?php the_custom_logo(); ?>
+                    </div><!-- .site-branding -->
+                    <button class="button navbar-burger is-justify-content-flex-end" data-target="primary-menu">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -58,7 +45,7 @@
             'depth'             => 0,
             'container'         => false,
             // 'items_wrap'     => 'div',
-            'menu_class'        => 'navbar-menu',
+            'menu_class' => 'navbar-menu is-justify-content-flex-end',
             'menu_id'           => 'primary-menu',
             'after'             => "</div>",
             'walker'            => new Navwalker())

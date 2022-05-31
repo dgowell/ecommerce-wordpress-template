@@ -18,23 +18,20 @@
 
     <div class="entry-content">
         <?php
-        get_template_part( 'template-parts/section-product', get_post_type() );
-        get_template_part( 'template-parts/section-description', get_post_type() );
-        get_template_part( 'template-parts/section-highlights', get_post_type() );
-        get_template_part( 'template-parts/section-review', get_post_type() );
-        the_content();
+        ?><section class="section"><?php the_content(); ?></section><?php
 
         wp_link_pages(
-            array(
-                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'air-head-sweden' ),
-                'after'  => '</div>',
-            )
+        array(
+        'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'air-head-sweden' ),
+            'after' => '</div>',
+        )
         );
         ?>
     </div><!-- .entry-content -->
-
-    <?php if ( get_edit_post_link() ) : ?>
-    <footer class="entry-footer">
+    <section class="section">
+        <?php if ( get_edit_post_link() ) : ?>
+    </section>
+    <footer class="section entry-footer">
         <?php
             edit_post_link(
                 sprintf(

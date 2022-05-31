@@ -6,16 +6,31 @@
  *
  * @package Air_Head_Sweden
  */
+$post_id = get_the_ID();
+$low = 'product-image-low';
+$high = 'product-image-high';
 
 ?>
-<section class="section has-text-centered is-flex-direction-column is-justify-content-center is-flex-wrap-wrap">
-    <h1 class="title">Section</h1>
-    <h2 class="subtitle">
-        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
-    </h2>
-    <figure class="image is-128x128 m-auto">
-        <img src="https://bulma.io/images/placeholders/128x128.png">
-    </figure>
-    <button class="button">Button</button>
-    <button class="button is-success is-outlined">More info</button>
+<section id="homepage-banner" class="section is-desktop is-vcentered reverse-columns-desktop">
+    <div class="column has-text-centered has-text-right-desktop">
+        <h1 class="title has-text-white is-size-1">Air Head komposteringstoalett</h1>
+        <h2 class="subtitle has-text-white is-size-4">
+            Miljövänlig och offgrid separerings- och komposteringstoalett för små utrymmen, såsom båtar, bilar,
+            husvagnar,
+            fritidshus
+        </h2>
+        <button class="button is-white is-outlined is-medium">Mer info</button>
+    </div>
+    <div class="column">
+        <div class="product-image m-auto">
+            <figure class="image is-square m-auto">
+                <img width="300"
+                    srcset="<?php echo get_post_meta( $post_id, $low, true ) ?> 1x, <?php echo get_post_meta( $post_id, $high, true ) ?> 2x"
+                    src="<?php echo get_post_meta( $post_id, $low, true ) ?>" alt="Air Head" />
+            </figure>
+        </div>
+        <div class="mt-3 has-text-centered">
+            <button class="button is-white is-medium">Köp Nu</button>
+        </div>
+    </div>
 </section>
