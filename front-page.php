@@ -22,6 +22,7 @@ get_header();
             get_template_part( 'template-parts/section-product', get_post_type() );
             get_template_part( 'template-parts/section-description', get_post_type() );
             get_template_part( 'template-parts/section-highlights', get_post_type() );
+            get_template_part( 'template-parts/section-bullet-points', get_post_type() );
             get_template_part( 'template-parts/section-review', get_post_type() );
             get_template_part( 'template-parts/section-faq', get_post_type() );
             get_template_part( 'template-parts/section-video', get_post_type() );

@@ -53,6 +53,7 @@ background-image: image-set(
 
 :root {
     --accent-color: #98AC24;
+    --muted: #d8ddcb;
 }
 
 /*
@@ -126,5 +127,25 @@ background-image: image-set(
         flex-direction: row-reverse;
     }
 }
-
-
+#homepage-description {
+    background-color: var(--muted);
+}
+#homepage-description .section {
+    border-radius: 0 0 10% 0;
+}
+#homepage-description .columns {
+    min-height: 350px;
+}
+#homepage-highlights .section {
+    background-color: var(--muted);
+    border-radius: 10% 0 10% 0;
+}
+#homepage-highlights .columns {
+    min-height: 350px;
+}
+#homepage-bullet-points {
+    background-color: var(--muted);
+}
+#homepage-bullet-points .section {
+    border-radius: 10% 0 0 0; 
+}

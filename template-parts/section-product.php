@@ -13,7 +13,7 @@ $high = 'product-image-high';
 ?>
 <section id="homepage-banner" class="section is-desktop is-vcentered">
     <div class="columns reverse-columns-desktop">
-        <div class=" column has-text-centered has-text-right-desktop is-align-self-center">
+        <div class=" column has-text-centered has-text-left-tablet has-text-right-desktop is-align-self-center">
             <h1 class="title has-text-white is-size-1">Air Head komposteringstoalett</h1>
             <h2 class="subtitle has-text-white is-size-4">
                 Miljövänlig och offgrid separerings- och komposteringstoalett för små utrymmen, såsom båtar, bilar,
