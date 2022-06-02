@@ -110,6 +110,9 @@ background-image: image-set(
     background-repeat: no-repeat;
     background-size: cover;
 }
+#homepage-banner .columns {
+    min-height: 500px;
+}
 @media screen and (min-width: 1024px) {
     #homepage-banner {
        background-image: url("http://air-head-sweden-shop.local/wp-content/uploads/2022/05/on-the-lake.jpg");
