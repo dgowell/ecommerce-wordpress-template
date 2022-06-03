@@ -16,22 +16,25 @@
                     <span class="icon">
                         <i class="fas fa-home"></i>
                     </span>
-                    <h3 class="title">Eco-Friendly</h3>
-                    <p class="subtitle">The Air Head is made from pure steel and never wears.</p>
+                    <h3 class="title">Frihet</h3>
+                    <p class="subtitle">Air Head fungerar med en fläkt som kan drivas offgrid, och inga anslutningar
+                        behövs till elnätet eller vatten- och avlopp.</p>
                 </div>
                 <div class="column is-align-self-center">
                     <span class="icon">
                         <i class="fas fa-home"></i>
                     </span>
-                    <h3 class="title">Eco-Friendly</h3>
-                    <p class="subtitle">The Air Head is made from pure steel and never wears.</p>
+                    <h3 class="title">Miljövänlig</h3>
+                    <p class="subtitle">Air Head främjar en kretsloppsanvändning som inte skadar naturen. Utan
+                        kemikalier. Utan utsläpp. Med minimal vattenförbrukning. Mycket energisnålt.</p>
                 </div>
                 <div class="column is-align-self-center">
                     <span class="icon">
                         <i class="fas fa-home"></i>
                     </span>
-                    <h3 class="title">Eco-Friendly</h3>
-                    <p class="subtitle">The Air Head is made from pure steel and never wears.</p>
+                    <h3 class="title">Tålig</h3>
+                    <p class="subtitle">Air Head är robust och tillverkad för tuffa omständigheter i krävande miljöer,
+                        såsom salta hav i storm med tyngd i rörelse. </p>
                 </div>
             </div>
         </div>

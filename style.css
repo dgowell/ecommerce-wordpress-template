@@ -52,8 +52,116 @@ background-image: image-set(
 
 
 :root {
-    --accent-color: #98AC24;
+    --accent: #98AC24;
     --muted: #d8ddcb;
+}
+/*
+*     GENERAL
+*************************************************************
+*/
+.button.is-accent {
+  background-color: var(--accent);
+  border-color: transparent;
+  color: #0a0a0a;
+}
+.button.is-accent:hover, .button.is-accent.is-hovered {
+  background-color: #f9f9f9;
+  border-color: transparent;
+  color: #0a0a0a;
+}
+
+.button.is-accent:focus, .button.is-accent.is-focused {
+  border-color: transparent;
+  color: #0a0a0a;
+}
+
+.button.is-accent:focus:not(:active), .button.is-accent.is-focused:not(:active) {
+  box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25);
+}
+
+.button.is-accent:active, .button.is-accent.is-active {
+  background-color: #f2f2f2;
+  border-color: transparent;
+  color: #0a0a0a;
+}
+
+.button.is-accent[disabled],
+fieldset[disabled] .button.is-accent {
+  background-color: var(--accent);
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.button.is-accent.is-inverted {
+  background-color: #0a0a0a;
+  color: var(--accent);
+}
+
+.button.is-accent.is-inverted:hover, .button.is-accent.is-inverted.is-hovered {
+  background-color: black;
+}
+
+.button.is-accent.is-inverted[disabled],
+fieldset[disabled] .button.is-accent.is-inverted {
+  background-color: #0a0a0a;
+  border-color: transparent;
+  box-shadow: none;
+  color: var(--accent);
+}
+
+.button.is-accent.is-loading::after {
+  border-color: transparent transparent #0a0a0a #0a0a0a !important;
+}
+
+.button.is-accent.is-outlined {
+  background-color: transparent;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.button.is-accent.is-outlined:hover, .button.is-accent.is-outlined.is-hovered, .button.is-accent.is-outlined:focus, .button.is-accent.is-outlined.is-focused {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #0a0a0a;
+}
+
+.button.is-accent.is-outlined.is-loading::after {
+  border-color: transparent transparent white white !important;
+}
+
+.button.is-accent.is-outlined.is-loading:hover::after, .button.is-accent.is-outlined.is-loading.is-hovered::after, .button.is-accent.is-outlined.is-loading:focus::after, .button.is-accent.is-outlined.is-loading.is-focused::after {
+  border-color: transparent transparent #0a0a0a #0a0a0a !important;
+}
+
+.button.is-accent.is-outlined[disabled],
+fieldset[disabled] .button.is-accent.is-outlined {
+  background-color: transparent;
+  border-color: var(--accent);
+  box-shadow: none;
+  color: var(--accent);
+}
+
+.button.is-accent.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #0a0a0a;
+  color: #0a0a0a;
+}
+
+.button.is-accent.is-inverted.is-outlined:hover, .button.is-accent.is-inverted.is-outlined.is-hovered, .button.is-accent.is-inverted.is-outlined:focus, .button.is-accent.is-inverted.is-outlined.is-focused {
+  background-color: #0a0a0a;
+  color: var(--accent);
+}
+
+.button.is-accent.is-inverted.is-outlined.is-loading:hover::after, .button.is-accent.is-inverted.is-outlined.is-loading.is-hovered::after, .button.is-accent.is-inverted.is-outlined.is-loading:focus::after, .button.is-accent.is-inverted.is-outlined.is-loading.is-focused::after {
+  border-color: transparent transparent white white !important;
+}
+
+.button.is-accent.is-inverted.is-outlined[disabled],
+fieldset[disabled] .button.is-accent.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #0a0a0a;
+  box-shadow: none;
+  color: #0a0a0a;
 }
 
 /*
@@ -64,7 +172,7 @@ background-image: image-set(
     align-items: center;
 }
 .site-header {
-    background-color: var(--accent-color);
+    background-color: var(--accent);
 }
 .site-branding img {
     max-width: 200px;
@@ -134,7 +242,7 @@ background-image: image-set(
     border-radius: 0 0 10% 0;
 }
 #homepage-description .columns {
-    min-height: 350px;
+    min-height: 440px;
 }
 #homepage-highlights .section {
     background-color: var(--muted);

@@ -17,8 +17,7 @@ $high = 'product-image-high';
             <h1 class="title has-text-white is-size-1">Air Head komposteringstoalett</h1>
             <h2 class="subtitle has-text-white is-size-4">
                 Miljövänlig och offgrid separerings- och komposteringstoalett för små utrymmen, såsom båtar, bilar,
-                husvagnar,
-                fritidshus
+                husvagnar, fritidshus
             </h2>
             <button class="button is-white is-outlined is-medium">Mer info</button>
         </div>

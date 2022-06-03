@@ -32,8 +32,8 @@ $high = 'product-image-high';
                             <li>En erkant hallbar produkt som funnits pa marknaden i 20 ar.</li>
                             <li>En erkant hallbar produkt som funnits pa marknaden i 20 ar.</li>
                         </ul>
-                        <button class="button is-success is-outlined">Read More</button>
-                        <button class="button">Buy Now</button>
+                        <button class="button is-accent is-outlined">Read More</button>
+                        <button class="button is-accent">Buy Now</button>
                     </div>
                 </div>
             </div>
