@@ -51,6 +51,9 @@ function air_head_sweden_setup() {
     register_nav_menus(
         array(
             'primary' => esc_html__( 'Primary', 'primary' ),
+            'submenu-one' => esc_html( 'Submenu One', 'submenu-one'),
+            'submenu-two' => esc_html( 'Submenu Two', 'submenu-two'),
+            'submenu-three' => esc_html( 'Submenu Three', 'submenu-three'),
         )
     );
 
@@ -179,3 +182,17 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
     require get_template_directory() . '/inc/jetpack.php';
 }
+/*
+* CUSTOM GLOBAL VARIABLES
+*/
+function tapacode_global_vars() {
+
+global $tapacode;
+$tapacode = array(
+    'twitter' => 'https://twitter.com/GreenAirhead',
+    'facebook' => 'https://www.facebook.com/AirHead.miljotoalett',
+    'instagram' => 'https://www.instagram.com/airheadtoilet/',
+);
+
+}
+add_action( 'parse_query', 'tapacode_global_vars' );

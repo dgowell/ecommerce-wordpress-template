@@ -11,8 +11,8 @@ $low = 'product-image-low';
 $high = 'product-image-high';
 ?>
 <section id="homepage-bullet-points">
-    <div
-        class="section has-text-centered is-flex-direction-column is-justify-content-center is-flex-wrap-wrap has-background-white-ter">
+    <div class="section has-text-centered is-flex-direction-column is-justify-content-center is-flex-wrap-wrap
+        has-background-white-ter is-align-content-center">
         <div class="container">
             <div class="columns">
                 <div class="column is-align-self-center">
@@ -27,13 +27,23 @@ $high = 'product-image-high';
                 <div class="column is-align-self-center has-text-left-tablet">
                     <div class="content">
                         <h2 class="title">Vad ar en miljovanlig torrkomposteringstoalett?</h2>
-                        <ul>
+                        <div class="bullet-point my-3">
+                            <img src="http://air-head-sweden-shop.local/wp-content/uploads/2022/06/tick-icon.png" />
                             <li>En erkant hallbar produkt som funnits pa marknaden i 20 ar.</li>
+                        </div>
+                        <div class="bullet-point my-3">
+                            <img src="http://air-head-sweden-shop.local/wp-content/uploads/2022/06/tick-icon.png" />
                             <li>En erkant hallbar produkt som funnits pa marknaden i 20 ar.</li>
+                        </div>
+                        <div class="bullet-point my-3">
+                            <img src="http://air-head-sweden-shop.local/wp-content/uploads/2022/06/tick-icon.png" />
                             <li>En erkant hallbar produkt som funnits pa marknaden i 20 ar.</li>
+                        </div>
                         </ul>
-                        <button class="button is-accent is-outlined">Read More</button>
-                        <button class="button is-accent">Buy Now</button>
+                        <div class="mt-5">
+                            <button class="button is-accent is-outlined mr-4">Läs mer</button>
+                            <button class="button is-accent">Köp Nu</button>
+                        </div>
                     </div>
                 </div>
             </div>

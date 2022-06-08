@@ -9,16 +9,18 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <header class="entry-header">
-        <?php the_title( '<h1 class="entry-title title">', '</h1>' ); ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class('section'); ?>>
+    <header class="hero">
+        <div class="hero-body">
+            <?php the_title( '<h1 class="title has-text-centered">', '</h1>' ); ?>
+        </div>
     </header><!-- .entry-header -->
 
     <?php air_head_sweden_post_thumbnail(); ?>
 
-    <div class="entry-content">
+    <div class="content container is-max-desktop has-text-centered">
         <?php
-        ?><section class="section"><?php the_content(); ?></section><?php
+        ?><section><?php the_content(); ?></section><?php
 
         wp_link_pages(
         array(

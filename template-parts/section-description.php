@@ -22,8 +22,8 @@ $high = 'product-image-high';
                     A simple container to divide your page into <strong>sections</strong>, like the one you're currently
                     reading.
                 </p>
-                <button class="button is-accent is-outlined">Read More</button>
-                <button class="button is-accent">Buy Now</button>
+                <button class="button is-accent is-outlined mr-4">Läs mer</button>
+                <button class="button is-accent">Köp Nu</button>
             </div>
             <div class="column is-align-self-center is-one-third">
                 <div class="product-image m-auto">
