@@ -18,6 +18,6 @@
                     frameborder="0" allowfullscreen></iframe>
             </figure>
             <a href="#">
-                <button class="button is-white is-outlined mt-5">Köp Nu</button>
+                <a href="/produkter"><button class="button is-white is-outlined mt-5">Köp Nu</button></a>
             </a>
 </section>

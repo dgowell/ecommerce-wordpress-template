@@ -41,8 +41,9 @@ $high = 'product-image-high';
                         </div>
                         </ul>
                         <div class="mt-5">
-                            <button class="button is-accent is-outlined mr-4">Läs mer</button>
-                            <button class="button is-accent">Köp Nu</button>
+                            <a href="/hur-fungerar-det"><button class="button is-accent is-outlined mr-4">Läs
+                                    mer</button></a>
+                            <a href="/produkter"><button class="button is-accent">Köp Nu</button></a>
                         </div>
                     </div>
                 </div>

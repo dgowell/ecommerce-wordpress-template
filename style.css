@@ -59,6 +59,12 @@ background-image: image-set(
 *     GENERAL
 *************************************************************
 */
+.section {
+  padding: 2rem 1.5rem;
+}
+.section header {
+  margin-bottom: 1.5rem;
+}
 .button.is-accent {
   background-color: var(--accent);
   border-color: transparent;
@@ -173,6 +179,12 @@ fieldset[disabled] .button.is-accent.is-inverted.is-outlined {
 }
 .site-header {
     background-color: var(--accent);
+    padding-bottom: 0.5rem;
+}
+@media screen and (min-width: 1024px) {
+ .site-header {
+   padding-bottom: 0;
+ } 
 }
 .site-branding img {
     max-width: 200px;
@@ -207,7 +219,62 @@ fieldset[disabled] .button.is-accent.is-inverted.is-outlined {
 #primary-menu .has-dropdown:hover .navbar-link:not(.is-arrowless)::after {
     border-color: #000000;
 }
-
+.button.navbar-burger,
+.woocommerce button.navbar-burger {
+  margin: 0;
+  background-color: var(--accent);
+  color: #FFFFFF;
+}
+.woocommerce button.button:hover {
+  background-color: #ffffff40;
+  color: #FFFFFF;
+}
+.burger-text {
+    font-size: 11px;
+    width: auto;
+    position: relative;
+    left: -7px;
+    margin: auto;
+    bottom: -14px;
+    color: white;
+}
+.button.navbar-burger span {
+    background-color: currentColor;
+    display: block;
+    height: 2px;
+    left: calc(50% - 15px);
+    position: absolute;
+    transform-origin: center;
+    transition-duration: 86ms;
+    transition-property: background-color, opacity, transform;
+    transition-timing-function: ease-out;
+    width: 30px;
+}
+.button.navbar-burger span:nth-child(1) {
+    top: calc(50% - 15px);
+}
+.button.navbar-burger span:nth-child(2) {
+    top: calc(50% - 7px);
+}
+.button.navbar-burger span:nth-child(3) {
+    top: calc(50% + 1px);
+}
+.button.navbar-burger.is-active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+.button.navbar-burger.is-active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+#searchsubmit, 
+#searchsubmit .input {
+  background: #FFFFFF;
+  padding: 5px 1rem 5px 1rem;
+}
+@media screen and (max-width: 1023px) {
+  .navbar-menu {
+    margin: 0.5rem 0;
+  }
+}
 /*
 *     HOME PAGE
 *************************************************************
@@ -319,10 +386,60 @@ fieldset[disabled] .button.is-accent.is-inverted.is-outlined {
 * SHOP
 *******************************************************************
 */
+.post-6 {
+  background-color: #F4F4F4;
+}
+.product {
+  background-color: #ffffff;
+}
+
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+}
+.woocommerce ul.products li.product img,
+.woocommerce-page ul.products li.product img {
+  border-radius: 1rem 1rem 0 0;
+}
+.woocommerce a.button {
+  background-color: var(--accent);
+  color: #ffffff;
+}
+.woocommerce-ordering.select, 
+.woocommerce-ordering > select{
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .woocommerce-ordering.select, 
+.woocommerce-ordering > select{
+  max-width: 20%;
+}
+}
+.select select:not([multiple]) {
+  border: solid 2px var(--accent);
+}
+.woocommerce div.product form.cart .variations .select {
+  min-width: 100%;
+}
 @media screen and (min-width: 1024px) {
   button.button.navbar-burger {
     display: none;
   }
+}
+#post-6 .select:not(.is-multiple):not(.is-loading)::after {
+    border-color: var(--accent);
+    right: 1.125em;
+    z-index: 4;
+}
+/*
+* PAGE.php
+* *****************************************************************
+*/
+
+.hero-body.ah-hero-body {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /*
@@ -332,6 +449,7 @@ fieldset[disabled] .button.is-accent.is-inverted.is-outlined {
 .site-footer {
   background-color: #3C4043;
 }
+
 .site-footer a {
   color: #FFFFFF;
 }

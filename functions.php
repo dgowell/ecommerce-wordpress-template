@@ -196,3 +196,12 @@ $tapacode = array(
 
 }
 add_action( 'parse_query', 'tapacode_global_vars' );
+
+/*
+* REMOVE SHOP PRODUCT COUNT
+*/
+function my_remove_product_result_count() {
+    remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_result_count', 20 );
+    remove_action( 'woocommerce_after_shop_loop' , 'woocommerce_result_count', 20 );
+}
+add_action( 'after_setup_theme', 'my_remove_product_result_count', 99 );

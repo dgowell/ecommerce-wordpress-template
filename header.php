@@ -28,16 +28,24 @@
             href="#primary"><?php esc_html_e( 'Skip to content', 'air-head-sweden' ); ?></a>
 
         <header id="masthead" class="site-header">
-            <nav class="navbar container" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand is-justify-content-space-between pr-3">
                     <div class="site-branding">
                         <?php the_custom_logo(); ?>
                     </div><!-- .site-branding -->
+                    <div class="p-3">
+                        <img class="image is-32x32 is-hidden-desktop"
+                            src="<?php bloginfo('template_url'); ?>/img/cart-icon.png" />
+                    </div>
+                </div>
+                <div class="navbar-brand is-justify-content-space-between px-3 is-flex-direction-row-reverse">
                     <button class="button navbar-burger" data-target="primary-menu">
                         <span></span>
                         <span></span>
                         <span></span>
+                        <p class="burger-text">MENU</p>
                     </button>
+                    <?php get_search_form(); ?>
                 </div>
                 <?php
         wp_nav_menu( array(

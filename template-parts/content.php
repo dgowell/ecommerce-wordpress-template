@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <header class="entry-header">
+    <header class="entry-header px-5 pt-5">
         <?php
         if ( is_singular() ) :
             the_title( '<h1 class="entry-title title">', '</h1>' );
@@ -31,7 +31,7 @@
 
     <?php air_head_sweden_post_thumbnail(); ?>
 
-    <div class="entry-content">
+    <div class="entry-content section">
         <?php
         the_content(
             sprintf(

@@ -27,7 +27,7 @@
                 <h3>Is this suitable for liveaboards?</h3>
                 <p>Yes, two people will be able to use the solid tank for a month prior to emptying.</p>
             </div>
-            <button class="button is-accent is-outlined mr-4">Läs mer</button>
+            <a href="/frekventa-fragor"><button class="button is-accent is-outlined mr-4">Läs mer</button></a>
         </div>
     </div>
 </section>
