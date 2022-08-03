@@ -27,7 +27,9 @@ get_header();
             get_template_part( 'template-parts/section-faq', get_post_type() );
             get_template_part( 'template-parts/section-video', get_post_type() );
             get_template_part( 'template-parts/section-twitter', get_post_type() );
-        ?><section class="section"><?php the_content(); ?></section><?php
+            get_template_part( 'template-parts/mailchimp', get_post_type() );
+        ?>
+        <?php
 
         wp_link_pages(
         array(
@@ -36,9 +38,7 @@ get_header();
         )
         );
         ?>
-        <section class="section">
-            <?php if ( get_edit_post_link() ) : ?>
-        </section>
+        <?php if ( get_edit_post_link() ) : ?>
         <footer class="section entry-footer">
             <?php
             edit_post_link(

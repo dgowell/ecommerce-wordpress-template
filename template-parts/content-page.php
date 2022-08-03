@@ -15,8 +15,11 @@
         <header class="hero">
             <div class="hero-body ah-hero-body">
                 <?php the_title( '<h1 class="title">', '</h1>' ); ?>
+                <?php if( get_post_meta( get_the_ID(), 'subtitle', true ) ) { ?>
+                <p class="subtitle"><?php echo get_post_meta(get_the_ID(), 'subtitle', true); ?></p>
+                <?php } ?>
             </div>
-        </header><!-- .entry-header -->
+        </header> <!-- .entry-header -->
         <?php
         ?><section><?php the_content(); ?></section><?php
 

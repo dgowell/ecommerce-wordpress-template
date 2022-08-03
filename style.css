@@ -441,7 +441,14 @@ fieldset[disabled] .button.is-accent.is-inverted.is-outlined {
   padding-left: 0;
   padding-right: 0;
 }
-
+.mailchimp {
+   background: var(--muted); 
+}
+#mc_embed_signup {
+    background: var(--muted);
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+}
 /*
 * FOOTER
 *******************************************************************
