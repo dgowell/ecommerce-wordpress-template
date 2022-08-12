@@ -9,19 +9,20 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('content pb-6'); ?>>
     <?php air_head_sweden_post_thumbnail(); ?>
-    <div class="section content">
-        <header class="hero">
-            <div class="hero-body ah-hero-body">
-                <?php the_title( '<h1 class="title">', '</h1>' ); ?>
-                <?php if( get_post_meta( get_the_ID(), 'subtitle', true ) ) { ?>
-                <p class="subtitle"><?php echo get_post_meta(get_the_ID(), 'subtitle', true); ?></p>
-                <?php } ?>
-            </div>
+    <div class="section container">
+        <?php  if ( !is_page('produkter') ) { ?>
+        <header class=" page-header">
+            <?php the_title( '<h1 class="title">', '</h1>' ); ?>
+            <?php if( get_post_meta( get_the_ID(), 'subtitle', true ) ) { ?>
+            <p class=" subtitle"><?php echo get_post_meta(get_the_ID(), 'subtitle', true); ?></p>
+            <?php } ?>
+
         </header> <!-- .entry-header -->
         <?php
-        ?><section><?php the_content(); ?></section><?php
+    }
+        ?><section class="airhead-body pt-5"><?php the_content(); ?></section><?php
 
         wp_link_pages(
             array(
@@ -34,7 +35,7 @@
     <section>
         <?php if ( get_edit_post_link() ) : ?>
     </section>
-    <footer class="section entry-footer">
+    <footer class=" section entry-footer">
         <?php
             edit_post_link(
                 sprintf(

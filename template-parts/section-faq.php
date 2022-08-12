@@ -10,7 +10,8 @@
 ?>
 <section id="homepage-faq" class="section">
     <div class="columns py-6">
-        <div class="content column is-half is-offset-one-quarter has-text-centered">
+        <div class="content column is-6 is-offset-3
+         has-text-centered">
             <h2 class="title">FAQ</h2>
             <div class="block mb-6">
                 <h3>Luktar den verkligen inte?</h3>

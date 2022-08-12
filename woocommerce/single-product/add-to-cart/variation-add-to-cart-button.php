@@ -29,7 +29,7 @@ global $product;
     ?>
 
     <button type="submit"
-        class="single_add_to_cart_button button is-accent"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+        class="single_add_to_cart_button button is-accent is-fullwidth my-4"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
 
     <?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 

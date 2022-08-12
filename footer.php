@@ -53,35 +53,38 @@ $website_url = get_stylesheet_directory_uri();
                 </div>
             </div><!-- columns -->
 
-            <div class="level">
-                <div class="level-left site-branding">
-                    <?php the_custom_logo(); ?>
-                </div><!-- .site-branding -->
-                <div class="level-right social-icons">
-                    <div class="level-item">
-                        <a href="<?php echo $GLOBALS['tapacode']['facebook'] ?>">
-                            <img class="image is-24x24" src="<?php echo $website_url ?>/img/fb-icon.png"
-                                alt="Facebook Icon" />
-                        </a>
-                    </div>
-                    <div class="level-item">
-                        <a href="<?php echo $GLOBALS['tapacode']['twitter'] ?>">
-                            <img class="image is-24x24" src="<?php echo $website_url ?>/img/tw-icon.png"
-                                alt="Twitter Icon" />
-                        </a>
-                    </div>
-                    <div class="level-item">
-                        <a href="<?php echo $GLOBALS['tapacode']['instagram'] ?>">
-                            <img class="image is-24x24" src="<?php echo $website_url ?>/img/ig-icon.png"
-                                alt="Instagram Icon" />
-                        </a>
-                    </div>
-                </div><!-- social icons -->
-            </div><!-- level -->
-
+            <div class="container columns">
+                <div class="column is-three-quarters">
+                    <div class="site-branding is-align-self-center">
+                        <?php the_custom_logo(); ?>
+                    </div><!-- .site-branding -->
+                </div>
+                <div class="column is-align-self-center ">
+                    <div id="social-icons" class="level is-mobile">
+                        <div class="level-item">
+                            <a href="<?php echo $GLOBALS['tapacode']['facebook'] ?>">
+                                <img class="image is-24x24" src="<?php echo $website_url ?>/img/fb-icon.png"
+                                    alt="Facebook Icon" />
+                            </a>
+                        </div>
+                        <div class="level-item">
+                            <a href="<?php echo $GLOBALS['tapacode']['twitter'] ?>">
+                                <img class="image is-24x24" src="<?php echo $website_url ?>/img/tw-icon.png"
+                                    alt="Twitter Icon" />
+                            </a>
+                        </div>
+                        <div class="level-item">
+                            <a href="<?php echo $GLOBALS['tapacode']['instagram'] ?>">
+                                <img class="image is-24x24" src="<?php echo $website_url ?>/img/ig-icon.png"
+                                    alt="Instagram Icon" />
+                            </a>
+                        </div>
+                    </div><!-- social icons -->
+                </div><!-- level -->
+            </div>
         </div><!-- container -->
     </div><!-- section -->
-    <div class=" site-info py-5">
+    <div class=" site-info p-5">
         <a href="<?php echo esc_url( __( 'https://tapacode.com/', 'air-head-sweden' ) ); ?>">
             <?php
                 /* translators: %s: CMS name, i.e. WordPress. */

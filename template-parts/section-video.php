@@ -9,15 +9,26 @@
 
 ?>
 <section class="section section-video has-text-centered">
-    <h2 class="title has-text-white">Hur installerar jag en Air Head toalett?<h2>
-            <p class="subtitle has-text-white">The Air Head toilet can easily be installed within a few hours. Watch
-                this video
-                demonstration to see how:</p>
-            <figure class="image is-16by9">
-                <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/XVYs5moyWes"
-                    frameborder="0" allowfullscreen></iframe>
-            </figure>
-            <a href="#">
-                <a href="/produkter"><button class="button is-white is-outlined mt-5">Köp Nu</button></a>
-            </a>
+    <div class="columns">
+        <div class="column section is-8 is-offset-2">
+            <h2 class="title has-text-white">Hur installerar jag en Air Head toalett?<h2>
+                    <p class="subtitle has-text-white">Air Head toaletten kan installeras inom några timmar. Allt som
+                        behövs ingår förutom; din utsidas ventilationsskydd, elsystemet som du ansluter till,
+                        sprayflaska att “spola” med, och mullen/kokosfibern du fyller på med.
+                    </p>
+                    <p class="has-text-white">Nedan finns en Air Head installationsvideo med exempel på utförande i en
+                        standard
+                        husbil:</p>
+
+                    </p>
+        </div>
+    </div><!-- columns -->
+
+    <figure class="image is-16by9">
+        <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/XVYs5moyWes"
+            frameborder="0" allowfullscreen></iframe>
+    </figure>
+    <div class="section">
+        <a href="/produkter"><button class="button is-white is-outlined">Köp Nu</button></a>
+    </div>
 </section>

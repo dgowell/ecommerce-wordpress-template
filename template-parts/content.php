@@ -12,11 +12,14 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header px-5 pt-5">
         <?php
-        if ( is_singular() ) :
+        if ( is_singular() &! is_single()) {
             the_title( '<h1 class="entry-title title">', '</h1>' );
-        else :
+        }
+        elseif (is_single()) {
+            the_title( '<h1 id="single-product-title" class=" entry-title title has-text-centered mt-6">', '</h1>' );
+        } else {
             the_title( '<h2 class="entry-title title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-        endif;
+        }
 
         if ( 'post' === get_post_type() ) :
             ?>
