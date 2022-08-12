@@ -6,10 +6,10 @@
  *
  * @package Air_Head_Sweden
  */
-$base = get_template_directory_uri();
-$fan = $base + "../../wp-content/uploads/2022/06/fan.png";
-$recycle = $base + "../../wp-content/uploads/2022/06/recycling.png";
-$strength = $base + "../../wp-content/uploads/2022/06/security.png";
+$base = get_site_url(null, '/wp-content/uploads/2022/06/', 'https');
+$fan = $base . "fan.png";
+$recycle = $base . "recycling.png";
+$strength = $base . "security.png";
 
 ?>
 <section id="homepage-highlights" class="has-background-white-ter">

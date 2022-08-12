@@ -9,6 +9,9 @@
 $post_id = get_the_ID();
 $low = 'product-image-low';
 $high = 'product-image-high';
+
+$base = get_site_url(null, '/wp-content/uploads/2022/06/', 'https');
+$tick_icon = $base . "tick-icon.png";
 ?>
 <section id="homepage-bullet-points">
     <div class="section has-text-centered is-flex-direction-column is-justify-content-center is-flex-wrap-wrap
@@ -28,26 +31,22 @@ $high = 'product-image-high';
                     <div class="content">
                         <h2 class="title has-text-centered">Varför ska jag välja Air Head?</h2>
                         <div class="bullet-point my-3">
-                            <img
-                                src="<?php echo get_template_directory_uri(); ?>../../wp-content/uploads/2022/06/tick-icon.png" />
+                            <img src="<?php echo $tick_icon ?>" />
                             <li>Hållbar - Air Head toaletten är tillverkad av rotationsgjuten plast med detaljer i
                                 rostfritt marint stål för att den ska ha ett lång liv och stå ut med hård användning.
                             </li>
                         </div>
                         <div class="bullet-point my-3">
-                            <img
-                                src="<?php echo get_template_directory_uri(); ?>../../wp-content/uploads/2022/06/tick-icon.png" />
+                            <img src="<?php echo $tick_icon ?>" />
                             <li>Kompakt - Det går nästan alltid att installera en Air Head i det flesta utrymme som
                                 behöver en toa.</li>
                         </div>
                         <div class="bullet-point my-3">
-                            <img
-                                src="<?php echo get_template_directory_uri(); ?>../../wp-content/uploads/2022/06/tick-icon.png" />
+                            <img src="<?php echo $tick_icon ?>" />
                             <li>Garanti - Vi garanterar samtliga delar av en Air Head under 5 år. </li>
                         </div>
                         <div class="bullet-point my-3">
-                            <img
-                                src="<?php echo get_template_directory_uri(); ?>../../wp-content/uploads/2022/06/tick-icon.png" />
+                            <img src="<?php echo $tick_icon ?>" />
                             <li>Miljövänlig - Tillverkningsmaterialet består delvis av återvunnen plast och tillverkade
                                 på ett sätt som förenklar återvinning när den inte längre behövs. Vi tar gärna emot din
                                 gammal Air Head och återvinner allt. Samt allt som kommer ut vid tömning är naturligt,
