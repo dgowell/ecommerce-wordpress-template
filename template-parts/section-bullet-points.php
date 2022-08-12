@@ -29,25 +29,25 @@ $high = 'product-image-high';
                         <h2 class="title has-text-centered">Varför ska jag välja Air Head?</h2>
                         <div class="bullet-point my-3">
                             <img
-                                src="<?php echo get_template_directory_uri(); ?>/wp-content/uploads/2022/06/tick-icon.png" />
+                                src="<?php echo get_template_directory_uri(); ?>../../wp-content/uploads/2022/06/tick-icon.png" />
                             <li>Hållbar - Air Head toaletten är tillverkad av rotationsgjuten plast med detaljer i
                                 rostfritt marint stål för att den ska ha ett lång liv och stå ut med hård användning.
                             </li>
                         </div>
                         <div class="bullet-point my-3">
                             <img
-                                src="<?php echo get_template_directory_uri(); ?>/wp-content/uploads/2022/06/tick-icon.png" />
+                                src="<?php echo get_template_directory_uri(); ?>../../wp-content/uploads/2022/06/tick-icon.png" />
                             <li>Kompakt - Det går nästan alltid att installera en Air Head i det flesta utrymme som
                                 behöver en toa.</li>
                         </div>
                         <div class="bullet-point my-3">
                             <img
-                                src="<?php echo get_template_directory_uri(); ?>/wp-content/uploads/2022/06/tick-icon.png" />
+                                src="<?php echo get_template_directory_uri(); ?>../../wp-content/uploads/2022/06/tick-icon.png" />
                             <li>Garanti - Vi garanterar samtliga delar av en Air Head under 5 år. </li>
                         </div>
                         <div class="bullet-point my-3">
                             <img
-                                src="<?php echo get_template_directory_uri(); ?>/wp-content/uploads/2022/06/tick-icon.png" />
+                                src="<?php echo get_template_directory_uri(); ?>../../wp-content/uploads/2022/06/tick-icon.png" />
                             <li>Miljövänlig - Tillverkningsmaterialet består delvis av återvunnen plast och tillverkade
                                 på ett sätt som förenklar återvinning när den inte längre behövs. Vi tar gärna emot din
                                 gammal Air Head och återvinner allt. Samt allt som kommer ut vid tömning är naturligt,

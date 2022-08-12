@@ -6,9 +6,10 @@
  *
  * @package Air_Head_Sweden
  */
-$fan = "http://air-head-sweden-shop.local/wp-content/uploads/2022/06/fan.png";
-$recycle = "http://air-head-sweden-shop.local/wp-content/uploads/2022/06/recycling.png";
-$strength = "http://air-head-sweden-shop.local/wp-content/uploads/2022/06/security.png";
+$base = get_template_directory_uri();
+$fan = $base + "../../wp-content/uploads/2022/06/fan.png";
+$recycle = $base + "../../wp-content/uploads/2022/06/recycling.png";
+$strength = $base + "../../wp-content/uploads/2022/06/security.png";
 
 ?>
 <section id="homepage-highlights" class="has-background-white-ter">
