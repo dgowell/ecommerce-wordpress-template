@@ -25,7 +25,7 @@
     </div><!-- columns -->
 
     <figure class="image is-16by9">
-        <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/XVYs5moyWes"
+        <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/asZGjDXqPhE"
             frameborder="0" allowfullscreen></iframe>
     </figure>
     <div class="section">
