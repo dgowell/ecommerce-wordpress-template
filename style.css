@@ -308,7 +308,7 @@ fieldset[disabled] .button.is-accent.is-inverted.is-outlined {
 */
 
 #homepage-banner {
-    background-image: url("http://air-head-sweden-shop.local/wp-content/uploads/2022/05/on-the-lake-MOB.jpg");
+    background-image: url('../../uploads/2022/08/boat-2-scaled.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -318,8 +318,7 @@ fieldset[disabled] .button.is-accent.is-inverted.is-outlined {
 }
 @media screen and (min-width: 1024px) {
     #homepage-banner {
-       /* background-image: url("http://air-head-sweden-shop.local/wp-content/uploads/2022/05/on-the-lake.jpg"); */
-       background-image: url('http://air-head-sweden-shop.local/wp-content/uploads/2022/08/boat-2-scaled.jpg');
+       background-image: url('../../uploads/2022/08/boat-2-scaled.jpg');
     }
 }
 .product-image {
