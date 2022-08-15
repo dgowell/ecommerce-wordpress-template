@@ -30,6 +30,15 @@
                 'after' => '</div>',
             )
         );
+        if (is_page('Enkel beskrivning av hur du installera din Air Head')){
+            get_template_part('template-parts/section-timeline', get_post_type());
+        }
+        if (is_page('Kontakta oss') | is_page('Om oss')) {
+           get_template_part('template-parts/section-social', get_post_type());
+            get_template_part('template-parts/section-mailchimp', get_post_type());
+           
+        }
+
         ?>
     </div><!-- .entry-content -->
     <section>

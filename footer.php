@@ -59,6 +59,9 @@ $website_url = get_stylesheet_directory_uri();
                         <?php the_custom_logo(); ?>
                     </div><!-- .site-branding -->
                 </div>
+                <div class="column">
+
+                </div>
                 <div class="column is-align-self-center ">
                     <div id="social-icons" class="level is-mobile">
                         <div class="level-item">
