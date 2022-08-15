@@ -32,6 +32,7 @@
         );
         if (is_page('Enkel beskrivning av hur du installera din Air Head')){
             get_template_part('template-parts/section-timeline', get_post_type());
+            get_template_part('template-parts/section-video', get_post_type());
         }
         if (is_page('Kontakta oss') | is_page('Om oss')) {
            get_template_part('template-parts/section-social', get_post_type());
