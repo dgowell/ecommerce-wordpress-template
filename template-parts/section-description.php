@@ -18,9 +18,7 @@ $high = 'product-image-high';
                 <div class="column has-text-left-tablet is-align-self-center px-6">
                     <h2 class="title">Vad ar en miljovanlig torrkomposteringstoalett?</h2>
                     <p class="subtitle">
-                        A simple container to divide your page into <strong>sections</strong>, like the one you're
-                        currently
-                        reading.
+                        Enkel att installera i såväl segelbåt och motorbåt, som i husbil, husvagn, eller fritidsstuga.
                     </p>
                     <A href="/hur-fungerar-det"><button class=" button is-accent is-outlined mr-4">Läs mer</button></a>
                     <a href="/produkter"><button class="button is-accent">Köp Nu</button></a>

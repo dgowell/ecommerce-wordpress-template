@@ -509,6 +509,10 @@ fieldset[disabled] .button.is-accent.is-inverted.is-outlined {
     width: 40%;
   }
 }
+.contact-icon-2 {
+  grid-template-columns: 8% auto!important;
+}
+
 .contact-icon {
   vertical-align: middle;
   text-align: center;
