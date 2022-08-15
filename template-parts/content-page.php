@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('content pb-6'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('content'); ?>>
     <?php air_head_sweden_post_thumbnail(); ?>
     <div class="section container">
         <?php  if ( !is_page('produkter') ) { ?>
@@ -32,16 +32,17 @@
         );
         if (is_page('Enkel beskrivning av hur du installera din Air Head')){
             get_template_part('template-parts/section-timeline', get_post_type());
-            get_template_part('template-parts/section-video', get_post_type());
         }
         if (is_page('Kontakta oss') | is_page('Om oss')) {
            get_template_part('template-parts/section-social', get_post_type());
             get_template_part('template-parts/section-mailchimp', get_post_type());
-           
         }
 
         ?>
     </div><!-- .entry-content -->
+    <?php if (is_page('Enkel beskrivning av hur du installera din Air Head')){
+        get_template_part('template-parts/section-video', get_post_type());
+        } ?>
     <section>
         <?php if ( get_edit_post_link() ) : ?>
     </section>
