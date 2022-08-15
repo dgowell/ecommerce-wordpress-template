@@ -175,7 +175,7 @@ fieldset[disabled] .button.is-accent.is-inverted.is-outlined {
   color: #0a0a0a;
 }
 .tag:not(body).is-primary {
-    background-color: var(--accent);
+    background-color: var(--accent)!important;
     color: #fff;
 }
 
