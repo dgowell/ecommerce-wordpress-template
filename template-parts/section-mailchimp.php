@@ -76,6 +76,5 @@
             var $mcj = jQuery.noConflict(true);
         </script>
         <!--End mc_embed_signup-->
-
     </div>
 </div>

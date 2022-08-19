@@ -3,11 +3,12 @@
  * Install Timeline
  * @package Air_Head_Sweden
  */
-
+$base = get_site_url(null, '/wp-content/uploads/2022/08/', 'https');
 ?>
-<div class="timeline is-centered mb-6">
+
+<div class="timeline is-centered mb-6 is-three-fifths column is-offset-one-fifth">
     <header class="timeline-header">
-        <span class="tag is-medium is-primary">Start</span>
+        <span class="tag is-medium">Start</span>
     </header>
     <div class="timeline-item">
         <div class="timeline-marker"></div>
@@ -132,8 +133,13 @@
         </div>
     </div>
     <div class="timeline-header">
-        <span class="tag is-medium is-primary">End</span>
+        <span class="tag is-medium">End</span>
+    </div>
+    <div class="mt-6 has-text-centered">
+        <p>Det finns en mer ingående beskrivning av installationen i instruktionsmanualen.</p>
+        <p><a href="<?php echo $base ?>Instruct-v9-PressQual.pdf"><button class="button my-4">Ladda ner</button>
+                <img class="image" alt="Air Head Install Manual for download"
+                    src="<?php echo $base ?>Screenshot-2022-08-19-at-12.08.22.png" />
+            </a></p>
     </div>
 </div>
-<p>Det finns en mer ingående beskrivning av installationen i instruktionsmanualen.</p>
-<p><a href="#">Du kan ladda ner den här. (link to the instructions manual)</a></p>
