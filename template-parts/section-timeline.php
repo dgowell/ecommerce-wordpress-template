@@ -138,7 +138,8 @@ $base = get_site_url(null, '/wp-content/uploads/2022/08/', 'https');
     <div class="mt-6 has-text-centered">
         <h2 class="title">Ladda ner instruktionsmanualen.</h2>
         <p class="subtitle">för mer detaljerade instruktioner</p>
-        <p><a href="<?php echo $base ?>Instruct-v9-PressQual.pdf"><button class="button mt-4 mb-6 ">Ladda ner</button>
+        <p><a href="<?php echo $base ?>Instruct-v9-PressQual.pdf"><button class="button mt-4 mb-6git add  ">Ladda
+                    ner</button>
                 <img class="image" alt="Air Head Install Manual for download"
                     src="<?php echo $base ?>Screenshot-2022-08-19-at-12.08.22.png" />
             </a></p>

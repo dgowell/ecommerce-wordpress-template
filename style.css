@@ -318,12 +318,18 @@ fieldset[disabled] .button.is-accent.is-inverted.is-outlined {
     background-size: cover;
 }
 #homepage-banner .columns {
-    min-height: 600px;
+    min-height: 900px;
 }
 @media screen and (min-width: 1024px) {
     #homepage-banner {
        background-image: url('../../uploads/2022/08/boat-2-scaled.jpg');
     }
+    #homepage-banner .column {
+      align-self: center !important;
+    }
+    #homepage-banner .columns {
+    min-height: 700px;
+}
 }
 .product-image {
     width: 270px;
