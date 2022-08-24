@@ -27,7 +27,7 @@ $tick_icon = $base . "tick-icon.png";
                         </figure>
                     </div>
                 </div>
-                <div class="column has-text-left">
+                <div class="column has-text-left is-align-self-center">
                     <div class="content">
                         <h2 class="title has-text-centered">Varför ska jag välja Air Head?</h2>
                         <div class="bullet-point my-3">

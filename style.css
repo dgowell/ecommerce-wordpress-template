@@ -579,15 +579,16 @@ fieldset[disabled] .button.is-accent.is-inverted.is-outlined {
     margin: auto;
   }
   .woocommerce div.product form.cart {
-    margin-bottom: 10em;
+    margin-bottom: 4em;
   }
 }
 .single {
   overflow: auto;
 }
-.summary {
+.price {
   text-align: center;
 }
+
 .product .quantity,
 .product .product_meta {
   display: none!important;
@@ -755,5 +756,31 @@ form.cart {
 @media screen and (min-width: 768px) {
   #social-icons .level-item:not(:last-child) {
     margin-right: 2rem;
+  }
+}
+/*
+* Individual Product - Air Head Toilet
+*/
+#diagram-gallery #gallery-2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+#diagram-gallery .gallery-item {
+  max-width:100%;
+  margin: 1.5rem;
+  padding: 0;
+}
+#diagram-gallery .gallery-caption {
+  font-weight: 600;
+  font-style: normal;
+}
+@media screen and (min-width: 768px) {
+  #diagram-gallery .gallery-item {
+    max-width:44%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #diagram-gallery .gallery-item {
+    max-width:26%;
   }
 }
