@@ -11,32 +11,31 @@
 <div class="section mt-6">
     <div class="container is-max-desktop">
         <h2 class=" title has-text-centered">Anmäl dig till vårt nyhetsbrev</h2>
+        <div class="indicates-required help mb-5"><span class="asterisk">*</span> anges som krävs
+        </div>
         <!-- Begin Mailchimp Signup Form -->
-        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
         <div id="mc_embed_signup">
             <form
                 action="https://Airheadtoilet.us17.list-manage.com/subscribe/post?u=9b78b063644bae21dc983c82f&amp;id=b436253b4c"
                 method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
                 target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
-                    <h2>Prenumerera</h2>
-                    <div class="indicates-required"><span class="asterisk">*</span> anges som krävs</div>
-                    <div class="mc-field-group">
-                        <label for="mce-EMAIL">E-postadress<span class="asterisk">*</span>
+                    <div class="mc-field-group field">
+                        <label class="label" for="mce-EMAIL">E-postadress<span class="asterisk">*</span>
                         </label>
-                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                        <input type="email" value="" name="EMAIL" class="required email input" id="mce-EMAIL">
                     </div>
-                    <div class="mc-field-group">
-                        <label for="mce-FNAME">Förnamn</label>
-                        <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                    <div class="mc-field-group field">
+                        <label class="label" for="mce-FNAME">Förnamn</label>
+                        <input type="text" value="" name="FNAME" class="input" id="mce-FNAME">
                     </div>
-                    <div class="mc-field-group">
-                        <label for="mce-LNAME">Efternamn</label>
-                        <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                    <div class="mc-field-group field">
+                        <label class="label" for="mce-LNAME">Efternamn</label>
+                        <input type="text" value="" name="LNAME" class="input" id="mce-LNAME">
                     </div>
-                    <div class="mc-field-group size1of2">
-                        <label for="mce-PHONE">Telefonnummer</label>
-                        <input type="text" name="PHONE" class="" value="" id="mce-PHONE">
+                    <div class="mc-field-group field size1of2">
+                        <label class="label" for="mce-PHONE">Telefonnummer</label>
+                        <input type="text" name="PHONE" class="input" value="" id="mce-PHONE">
                     </div>
                     <div id="mce-responses" class="clear foot">
                         <div class="response" id="mce-error-response" style="display:none"></div>
