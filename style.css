@@ -801,3 +801,11 @@ form.cart {
     position: fixed;
     z-index: 60;
 }
+#cookieNotice .button {
+  background-color: var(--accent);
+  color: #FFFFFF;
+}
+#cookieNotice .button:hover {
+  background-color: var(--accent-hover);
+  color: #FFFFFF;
+}
