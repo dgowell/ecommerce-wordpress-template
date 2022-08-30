@@ -207,16 +207,49 @@ function my_remove_product_result_count() {
 }
 add_action( 'after_setup_theme', 'my_remove_product_result_count', 99 );
 
+
 /*
-* CUSTOM COMMENT WALKERE 
+* SHORTCODE
+*/
+function get_dimensions() {
+    $base = get_site_url(null, '/wp-content/uploads/2022/08/', 'https');
+    $large_side = $base . "Dimensions-Air-head-mm-Large-Seat.png";
+    $large_front = $base . "AH-Front-Dimensions-Large-Seat-.png";
+    $small_side = $base . "Dimensions-Air-head-mm.png";
+    $small_front = $base . "AH-Front-Dimensions-Small-Seat-.png";
+ return '
+ <h2 class="title">Mått</h2>
+    <div class="columns py-6 has-text-centered">
+        <div class="column">
+            <img alt="Air Head sidovy av stort säte" src="' . $large_side . '"></img>
+<h3>Sidovy av stort säte</h3>
+</div>
+<div class=" column">
+    <img alt="Air Head stor sits framifrån" src="' . $large_front .'"></img>
+    <h3>Stor sits framifrån</h3>
+</div>
+<div class="column">
+    <img alt="Air Head sidovy av det lilla sätet" src="' . $small_side .'"></img>
+<h3>Sidovy av det lilla sätet</h3>
+</div>
+<div class="column">
+    <img alt="Air Head liten sittplats framifrån" src="'. $small_front .'"></img>
+<h3>Liten sittplats framifrån</h3>
+</div>
+</div>
+';
+}
+add_shortcode('dimensions', 'get_dimensions');
+/*
+* CUSTOM COMMENT WALKERE
 */
 
 class comment_walker extends Walker_Comment {
-    var $tree_type = 'comment';
-    var $db_fields = array( 'parent' => 'comment_parent', 'id' => 'comment_ID' );
+var $tree_type = 'comment';
+var $db_fields = array( 'parent' => 'comment_parent', 'id' => 'comment_ID' );
 
-    // constructor – wrapper for the comments list
-    function __construct() { ?>
+// constructor – wrapper for the comments list
+function __construct() { ?>
 
 <section class="comments-list">
 
