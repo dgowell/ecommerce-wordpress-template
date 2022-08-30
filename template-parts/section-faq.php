@@ -8,7 +8,7 @@
  */
 
 ?>
-<section id="homepage-faq" class="section">
+<section id="homepage-faq" class="section has-background-white-bis">
     <div class="columns py-6">
         <div class="content column is-6 is-offset-3
          has-text-centered">
