@@ -310,26 +310,25 @@ fieldset[disabled] .button.is-accent.is-inverted.is-outlined {
 *     HOME PAGE
 *************************************************************
 */
+#homepage-carousel > .hero-body {
+  min-height: 600px;
+}
+.slider-navigation-previous, .slider-navigation-next {
+  display: none!important;
+}
+#homepage-banner-mob {
+    background-image: url('../../uploads/2022/09/boat-mob.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#homepage-banner-mob .column {
+  align-self: center !important;
+}
 
-#homepage-banner {
-    background-image: url('../../uploads/2022/08/boat-2-scaled.jpg');
+.slide-img {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-#homepage-banner .columns {
-    min-height: 900px;
-}
-@media screen and (min-width: 1024px) {
-    #homepage-banner {
-       background-image: url('../../uploads/2022/08/boat-2-scaled.jpg');
-    }
-    #homepage-banner .column {
-      align-self: center !important;
-    }
-    #homepage-banner .columns {
-    min-height: 700px;
-}
 }
 .product-image {
     width: 270px;
@@ -437,14 +436,14 @@ fieldset[disabled] .button.is-accent.is-inverted.is-outlined {
     padding: 0 5px;
   }
 }
-.hero .title {
+#post-6 .hero .title {
     text-align: center;
     color: white;
     padding-top: 147px;
     font-size: 7rem;
 }
 @media screen and (max-width: 1023px) {
-  .hero .title {
+  #post-6 .hero .title {
     font-size: 4rem;
     padding-top: 81px;
   }
