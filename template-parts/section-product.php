@@ -8,30 +8,30 @@
  */
 //require_once "libs/Mobile_Detect.php";
 $detect = new Mobile_Detect;
+$base = get_site_url(null, '/wp-content/uploads/2022/09/', 'https');
 ?>
 <!-- Start Hero Carousel -->
 <section class="hero is-medium has-carousel">
     <div id="homepage-carousel" class="hero-carousel">
         <div class="item-1">
             <?php if ($detect->isMobile()) { ?>
-            <img class="slide-img" src="http://air-head-sweden-shop.local/wp-content/uploads/2022/09/boat-dark.jpg">
+            <img class="slide-img" src="<?php echo $base . "/boat-dark.jpg" ?>">
             <?php } else { ?>
-            <img class="slide-img"
-                src="http://air-head-sweden-shop.local/wp-content/uploads/2022/09/catamarang-1-scaled.jpg">
+            <img class="slide-img" src="<?php echo $base . "/catamarang-1-scaled.jpg" ?>">
             <?php } ?>
         </div>
         <div class="item-2">
             <?php if ($detect->isMobile()) { ?>
-            <img class="slide-img" src="http://air-head-sweden-shop.local/wp-content/uploads/2022/09/forest-dark-2.jpg">
+            <img class="slide-img" src="<?php echo $base . "/forest-dark-2.jpg" ?>">
             <?php } else { ?>
-            <img src="http://air-head-sweden-shop.local/wp-content/uploads/2022/09/van-in-snow.jpg" />
+            <img src="<?php echo $base . "/van-in-snow.jpg" ?>" />
             <?php } ?>
         </div>
         <div class="item-3">
             <?php if ($detect->isMobile()) { ?>
-            <img class="slide-img" src="http://air-head-sweden-shop.local/wp-content/uploads/2022/09/van-dark-2.jpg">
+            <img class="slide-img" src="<?php echo $base . "/van-dark-2.jpg" ?>">
             <?php } else { ?>
-            <img src="http://air-head-sweden-shop.local/wp-content/uploads/2022/09/house-in-the-forest-scaled.jpg" />
+            <img src="<?php echo $base . "/house-in-the-forest-scaled.jpg" ?>" />
             <?php } ?>
         </div>
     </div>
