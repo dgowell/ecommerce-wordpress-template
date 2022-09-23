@@ -17,7 +17,7 @@ $base = get_site_url(null, '/wp-content/uploads/2022/09/', 'https');
             <?php if ($detect->isMobile()) { ?>
             <img class="slide-img" src="<?php echo $base . "/boat-dark.jpg" ?>">
             <?php } else { ?>
-            <img class="slide-img" src="<?php echo $base . "/catamarang-1-scaled.jpg" ?>">
+            <img class="slide-img" src="<?php echo $base . "/catamarang-1-scaled-1.jpg" ?>">
             <?php } ?>
         </div>
         <div class="item-2">
@@ -31,7 +31,7 @@ $base = get_site_url(null, '/wp-content/uploads/2022/09/', 'https');
             <?php if ($detect->isMobile()) { ?>
             <img class="slide-img" src="<?php echo $base . "/van-dark-2.jpg" ?>">
             <?php } else { ?>
-            <img src="<?php echo $base . "/house-in-the-forest-scaled.jpg" ?>" />
+            <img src="<?php echo $base . "/house-in-the-forest-scaled-1.jpg" ?>" />
             <?php } ?>
         </div>
     </div>
