@@ -318,12 +318,12 @@ fieldset[disabled] .button.is-accent.is-inverted.is-outlined {
 }
 @media screen and (min-width: 500px) {
 .homepage-banner {
-  padding: 100px 30px;
+  padding: 158px 30px;
 }
 }
 @media screen and (min-width: 800px) {
 .homepage-banner {
-  padding: 130px 60px;
+  padding: 200px 60px;
 }
 }
 .slide-img {
