@@ -316,15 +316,16 @@ fieldset[disabled] .button.is-accent.is-inverted.is-outlined {
 .slider-navigation-previous, .slider-navigation-next {
   display: none!important;
 }
-#homepage-banner-mob {
-    background-image: url('../../uploads/2022/09/boat-mob.jpg');
-    background-position: center;
-    background-size: cover;
+@media screen and (min-width: 500px) {
+.homepage-banner {
+  padding: 100px 30px;
 }
-#homepage-banner-mob .column {
-  align-self: center !important;
 }
-
+@media screen and (min-width: 800px) {
+.homepage-banner {
+  padding: 130px 60px;
+}
+}
 .slide-img {
     background-position: center center;
     background-repeat: no-repeat;
