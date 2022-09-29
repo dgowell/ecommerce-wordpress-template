@@ -428,7 +428,7 @@ fieldset[disabled] .button.is-accent.is-inverted.is-outlined {
 }
 @media (min-width:800px) {
  .carousel__slide:nth-child(1) {
-    background-image: url("../../uploads/2022/09/house-in-the-forest-scaled.jpg");
+    background-image: url("../../uploads/2022/09/van-in-snow.jpg");
   }
   .carousel__slide:nth-child(2) {
     background-image: url("../../uploads/2022/09/house-in-the-forest-scaled.jpg");
