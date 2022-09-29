@@ -374,11 +374,25 @@ fieldset[disabled] .button.is-accent.is-inverted.is-outlined {
 
 .carousel {
   position: relative;
-  padding-top: 33%;
+  padding-top: 100%;
   filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
 }
-
+@media(min-width:800px){
+  .carousel {
+    padding-top:33%;
+  }
+}
+@media(min-width:600px){
+  .homepage-banner .column {
+    padding: 7rem;
+  }
+}
+@media(min-width:1024px){
+ .homepage-banner .column {
+    padding: 0;
+  } 
+}
 .carousel__viewport {
   position: absolute;
   top: 0;
@@ -387,6 +401,7 @@ fieldset[disabled] .button.is-accent.is-inverted.is-outlined {
   left: 0;
   display: flex;
   overflow-x: scroll;
+  list-style: none;
   counter-reset: item;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
@@ -399,21 +414,28 @@ fieldset[disabled] .button.is-accent.is-inverted.is-outlined {
   width: 100%;
   counter-increment: item;
   height: auto;
+  background-size: cover;
+  background-position: center;
 }
 .carousel__slide:nth-child(1) {
-  background-image: url("http://air-head-sweden-shop.local/wp-content/uploads/2022/09/van-in-snow.jpg");
-  background-size: cover;
-  background-position: center;
+  background-image: url("../../uploads/2022/09/boat-dark.jpg");
 }
 .carousel__slide:nth-child(2) {
-  background-image: url("http://air-head-sweden-shop.local/wp-content/uploads/2022/09/house-in-the-forest-scaled.jpg");
-  background-size: cover;
-  background-position: center;
+  background-image: url("../../uploads/2022/09/van-dark-2.jpg");
 }
 .carousel__slide:nth-child(3) {
-  background-image: url("http://air-head-sweden-shop.local/wp-content/uploads/2022/09/catamarang-1-scaled.jpg");
-  background-size: cover;
-  background-position: center;
+  background-image: url("../../uploads/2022/09/forest-dark.jpg");
+}
+@media (min-width:800px) {
+ .carousel__slide:nth-child(1) {
+    background-image: url("../../uploads/2022/09/house-in-the-forest-scaled.jpg");
+  }
+  .carousel__slide:nth-child(2) {
+    background-image: url("../../uploads/2022/09/house-in-the-forest-scaled.jpg");
+  }
+  .carousel__slide:nth-child(3) {
+    background-image: url("../../uploads/2022/09/catamarang-1-scaled.jpg");
+  }
 }
 .carousel__snapper {
   position: absolute;
