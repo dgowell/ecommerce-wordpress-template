@@ -18,9 +18,9 @@ $base = get_site_url(null, '/wp-content/uploads/2022/09/', 'https');
                     <div class="column is-5-desktop is-offset-7-desktop has-text-centered has-text-right-desktop py-6">
                         <h1 class="title has-text-white">Air Head komposteringstoalett</h1>
                         <h2 class="subtitle has-text-white">
-                            Miljövänlig och offgrid separerings- och komposteringstoalett för små utrymmen, såsom
-                            båtar, bilar,
-                            husvagnar, fritidshus
+                            Miljövänlig, offgrid, separations- och komposteringstoalett. Luktfri, effektiv, hållbar och
+                            lätt anpassad till ditt hem på hjul. Smidig att tömma, och
+                            gör ditt privatliv bekvämt och enkelt var du än är.
                         </h2>
                         <div class="hero-foot"><a href="/hur-fungerar-det">
                                 <button class="button is-white has-outline">Mer info</button>
@@ -35,9 +35,8 @@ $base = get_site_url(null, '/wp-content/uploads/2022/09/', 'https');
                     <div class="column is-5-desktop is-offset-7-desktop has-text-centered has-text-right-desktop py-6">
                         <h1 class="title has-text-white">Air Head komposteringstoalett</h1>
                         <h2 class="subtitle has-text-white">
-                            Miljövänlig och offgrid separerings- och komposteringstoalett för små utrymmen, såsom
-                            båtar, bilar,
-                            husvagnar, fritidshus
+                            Miljövänlig, offgrid, separations- och komposteringstoalett. Luktfri, effektiv, hållbar samt
+                            lagenlig. Lätt att installera, använda och sköta. Passar var som helst; perfekt!
                         </h2>
                         <div class="hero-foot"><a href="/hur-fungerar-det">
                                 <button class="button is-white has-outline">Mer info</button>
@@ -52,9 +51,9 @@ $base = get_site_url(null, '/wp-content/uploads/2022/09/', 'https');
                     <div class="column is-5-desktop is-offset-7-desktop has-text-centered has-text-right-desktop py-6">
                         <h1 class="title has-text-white">Air Head komposteringstoalett</h1>
                         <h2 class="subtitle has-text-white">
-                            Miljövänlig och offgrid separerings- och komposteringstoalett för små utrymmen, såsom
-                            båtar, bilar,
-                            husvagnar, fritidshus
+                            Miljövänlig, offgrid, separations- och komposteringstoalett. Luktfri, effektiv, hållbar och
+                            laglig. Lätt anpassad till båtar, med enkel tömning utan
+                            skrovgenomföringar och utan behov av tömningsstationer.
                         </h2>
                         <div class="hero-foot"><a href="/hur-fungerar-det">
                                 <button class="button is-white has-outline">Mer info</button>
