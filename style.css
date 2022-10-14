@@ -310,50 +310,6 @@ fieldset[disabled] .button.is-accent.is-inverted.is-outlined {
 *     HOME PAGE
 *************************************************************
 */
-@keyframes tonext {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: 100%;
-  }
-  98% {
-    left: 100%;
-  }
-  99% {
-    left: 0;
-  }
-}
-
-@keyframes tostart {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: -300%;
-  }
-  98% {
-    left: -300%;
-  }
-  99% {
-    left: 0;
-  }
-}
-
-@keyframes snap {
-  96% {
-    scroll-snap-align: center;
-  }
-  97% {
-    scroll-snap-align: none;
-  }
-  99% {
-    scroll-snap-align: none;
-  }
-  100% {
-    scroll-snap-align: center;
-  }
-}
 
 *::-webkit-scrollbar {
   width: 0;
@@ -372,20 +328,13 @@ fieldset[disabled] .button.is-accent.is-inverted.is-outlined {
   -ms-overflow-style: none;
 }
 
-.carousel {
-  position: relative;
-  padding-top: 100%;
-  filter: drop-shadow(0 0 10px #0003);
-  perspective: 100px;
-}
-@media(min-width:800px){
-  .carousel {
-    padding-top:33%;
-  }
-}
+
 @media(min-width:600px){
   .homepage-banner .column {
     padding: 7rem;
+  }
+  .homepage-banner {
+    top: 25%;
   }
 }
 @media(min-width:1024px){
@@ -393,86 +342,34 @@ fieldset[disabled] .button.is-accent.is-inverted.is-outlined {
     padding: 0;
   } 
 }
-.carousel__viewport {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  overflow-x: scroll;
-  list-style: none;
-  counter-reset: item;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  margin-bottom: -16px;
-}
 
-.carousel__slide {
-  position: relative;
-  flex: 0 0 100%;
+.carousel-cell {
   width: 100%;
-  counter-increment: item;
-  height: auto;
+  height: 700px;
   background-size: cover;
   background-position: center;
 }
-.carousel__slide:nth-child(1) {
+.carousel-cell:nth-child(1) {
   background-image: url("../../uploads/2022/09/boat-dark.jpg");
 }
-.carousel__slide:nth-child(2) {
+.carousel-cell:nth-child(2) {
   background-image: url("../../uploads/2022/09/van-dark-2.jpg");
 }
-.carousel__slide:nth-child(3) {
+.carousel-cell:nth-child(3) {
   background-image: url("../../uploads/2022/09/forest-dark.jpg");
 }
 @media (min-width:800px) {
- .carousel__slide:nth-child(1) {
+ .carousel-cell:nth-child(1) {
     background-image: url("../../uploads/2022/09/van-in-snow.jpg");
   }
-  .carousel__slide:nth-child(2) {
+  .carousel-cell:nth-child(2) {
     background-image: url("../../uploads/2022/09/house-in-the-forest-scaled.jpg");
   }
-  .carousel__slide:nth-child(3) {
+  .carousel-cell:nth-child(3) {
     background-image: url("../../uploads/2022/09/catamarang-1-scaled.jpg");
   }
 }
-.carousel__snapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  scroll-snap-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
 
-@media (hover: hover) {
-  .carousel__snapper {
-    animation-name: tonext, snap;
-    animation-timing-function: ease;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-  }
-
-  .carousel__slide:last-child .carousel__snapper {
-    animation-name: tostart, snap;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .carousel__snapper {
-    animation-name: none;
-  }
-}
-
-.slide-img {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .product-image {
     width: 270px;
 }
